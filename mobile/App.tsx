@@ -1,3 +1,5 @@
+//DAYJS
+import './src/lib/dayjs'
 //REACT
 import { StatusBar } from 'react-native'
 //COMPONENTS
@@ -11,7 +13,8 @@ import {
   Inter_800ExtraBold
 } from '@expo-google-fonts/inter'
 //SCREENS
-import { Home } from './src/screens/Home'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { Routes } from './src/routes'
 
 
 export default function App() {
@@ -23,9 +26,9 @@ export default function App() {
   })
 
   return (
-    <>
+    <SafeAreaProvider>
       <StatusBar barStyle="light-content" backgroundColor='transparent' translucent/>
-      {fontsLoaded ? <Home /> : <Loading />}
-    </>
+      {fontsLoaded ? <Routes /> : <Loading />}
+    </SafeAreaProvider>
   )
 }
