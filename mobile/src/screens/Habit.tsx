@@ -1,9 +1,13 @@
+//REACT
 import { View, Text, ScrollView } from 'react-native'
-import { useRoute } from '@react-navigation/native'
+//COMPONENTS
 import { BackButton } from '../components/BackButton'
-import dayjs from 'dayjs'
 import { ProgressBar } from '../components/ProgressBar'
 import { CheckBox } from '../components/CheckBox'
+//NAVIGATION
+import { useRoute } from '@react-navigation/native'
+//DAYJS
+import dayjs from 'dayjs'
 
 interface IParams {
   date: string

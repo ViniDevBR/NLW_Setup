@@ -1,8 +1,11 @@
 
+//REACT
 import { View, TouchableOpacity, Text } from 'react-native'
+//IMG && ICONS && TAILWIND
 import Logo from '../assets/logo.svg'
 import { Feather } from '@expo/vector-icons'
 import colors from 'tailwindcss/colors'
+//NAVIGATION
 import { useNavigation } from '@react-navigation/native'
 
 export function Header() {
